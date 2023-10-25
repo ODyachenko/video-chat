@@ -1,0 +1,62 @@
+@import '../../assets/scss/variables.scss';
+
+.chat {
+  &__wrapper {
+    height: calc(100vh - 106px);
+  }
+  &__catalogue {
+    // max-width: 420px;
+    background: $mainBg;
+    border: 1.5px solid #eae9e9;
+
+    padding-bottom: 15px;
+  }
+  &__title {
+    font-size: 18px;
+    background: #fff;
+    border-bottom: 1px solid #fdfbfb;
+
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  &__list {
+    &-item {
+      display: flex;
+      align-items: center;
+      // justify-content: space-between;
+      border-radius: 31px;
+      background: rgba(255, 255, 255, 0.8);
+
+      padding: 15px;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+    &-avatar {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+
+      margin-right: 15px;
+    }
+    &-name {
+      margin-right: auto;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .chat {
+    &__wrapper {
+      display: flex;
+    }
+    &__catalogue {
+      width: 420px;
+      flex-shrink: 0;
+    }
+    &__title {
+      padding: 15px 30px;
+    }
+  }
+}
