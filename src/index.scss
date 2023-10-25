@@ -1,0 +1,20 @@
+@import './assets/scss/normalize.scss';
+@import './assets/scss/fonts.scss';
+@import './assets/scss/variables.scss';
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1650px;
+    padding: 0 30px;
+  }
+}
