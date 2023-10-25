@@ -1,0 +1,22 @@
+@import '../../assets/scss/variables.scss';
+
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 60px;
+  cursor: pointer;
+  padding: 10px 40px;
+
+  &.primary {
+    color: #fff;
+    background: $primaryBlue;
+  }
+  &.secondary {
+    color: $primaryBlue;
+    background: $secondaryBg;
+  }
+  &.danger {
+    color: #fff;
+    background: $primaryRedColor;
+  }
+}
