@@ -1,0 +1,77 @@
+@import '../../assets/scss/variables.scss';
+
+.chat {
+  &__screens {
+    position: relative;
+    background: $mainBg;
+    padding: 15px 0;
+
+    &-actions {
+      text-align: center;
+      background: #fff;
+      border: 1.5px solid #edf0f6;
+      padding: 15px;
+
+      position: absolute;
+      bottom: 15px;
+      right: 0;
+      left: 0;
+    }
+  }
+}
+
+.screen {
+  position: relative;
+  max-width: 297px;
+
+  &__video {
+    border-radius: 19px;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(0deg, #000 -43.48%, rgba(0, 0, 0, 0) 76.09%);
+    border-radius: 0 0 19px 19px;
+    padding: 12px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__username {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 60.914px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2.7688093185424805px);
+    padding: 8px 15px;
+  }
+  &__mute {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $primaryBlue;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1024px) {
+  .chat {
+    &__screens {
+      width: 100%;
+
+      & .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+    }
+  }
+}
